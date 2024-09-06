@@ -1,0 +1,172 @@
+.header{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(224, 221, 221);
+    border-bottom-style: solid;
+    z-index: 100;
+}
+.body{
+    padding-top: 80px;
+}
+.left{
+    display: flex;
+    align-items: center;
+
+}
+.middle{
+    
+    flex:1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    
+    align-items: center;
+    
+
+    
+
+}
+.right{
+    
+    width: 206px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    
+
+}
+.menu{
+    height: 20px;
+    margin-left: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+
+    
+}
+.yt_logo{
+    height: 24px;
+    
+
+}
+.s_button{
+    height: 40px;
+    width: 60px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(180, 177, 177);
+    margin-left: -1;
+
+    
+}
+.s_button, .vs_button, .upload-icon-container,.yt_logo, .icons-container,.noti_container, .ch_icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.s_button .tooltip, .vs_button .tooltip, .upload-icon-container .tooltip, .icons-container .tooltip, .noti_container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding: 4px;
+    padding-left:8px ;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    font-family:Roboto,Arial ;
+    
+}
+
+.s_button:hover .tooltip,
+.vs_button:hover .tooltip, .upload-icon-container:hover .tooltip ,.icons-container:hover .tooltip, .noti_container:hover .tooltip{
+    opacity: 1;
+    
+}
+.s_img{
+    height: 25px;
+    
+}
+.vs_button{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+   border-radius: 20px;
+   border: none;
+   background-color: rgb(249, 243, 243);}
+.vs_img{
+    height: 24px;
+    
+   
+
+
+}
+.search_bar{
+    flex:1;
+    height: 36px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(180, 177, 177);
+    padding-left: 10px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0.0.05);
+    width: 0;
+
+
+
+}
+.search_bar::placeholder{
+    font-size: 16px;
+    
+    
+}
+
+.upload_icon{
+    height: 24px;
+}
+.app_icon{
+    height: 24px;
+}
+.noti_icon{
+    height: 24px;
+}
+.ch_icon{
+    height: 32px;
+    margin-right: 20px;
+}
+.noti_container{
+    position: relative;
+
+}
+.notification_count{
+    position: absolute;
+    background-color: rgb(193, 8, 8);
+    
+    font-family: Roboto;
+    font-size: 11px;
+    top: -2px;
+    right: -5px;
+    color: white;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+
+
+}
